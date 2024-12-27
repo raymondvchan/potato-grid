@@ -17,13 +17,13 @@ logger = logging.getLogger()
 logger.addHandler(file_handler)
 
 # create a Binance exchange object using the API and secret keys
-exchange = ccxt.binance({
+exchange = ccxt.mexc({
     'apiKey': keys.API_KEY,
     'secret': keys.SECRET_KEY
 })
 
 # use the Binance testnet
-exchange.set_sandbox_mode(True)
+# exchange.set_sandbox_mode(True)
 
 # get the latest ticker information for the trading symbol
 ticker = exchange.fetch_ticker(Config.SYMBOL)

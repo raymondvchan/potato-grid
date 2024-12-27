@@ -5,8 +5,8 @@ class Config:
     POSITION_SIZE = 0.001
 
     # Define the number of grid lines to use for buying and selling
-    NUM_BUY_GRID_LINES = 5
-    NUM_SELL_GRID_LINES = 5
+    NUM_BUY_GRID_LINES = 50
+    NUM_SELL_GRID_LINES = 50
 
     # Define the size of each grid step
     GRID_STEP_SIZE = 3

@@ -5,12 +5,12 @@ import keys
 from config import Config
 
 # exchange object
-exchange = ccxt.binance({
+exchange = ccxt.mexc({
     'apiKey': keys.API_KEY,
     'secret': keys.SECRET_KEY
 })
 
-exchange.set_sandbox_mode(True)  # enable sandbox mode
+# exchange.set_sandbox_mode(True)  # enable sandbox mode
 
 def cancel_orders():
     # Cancel all orders for the symbol
